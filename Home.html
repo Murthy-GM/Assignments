@@ -1,0 +1,304 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="content1">
+    <!-- first we create line within text -->
+    <style>
+      .text-containers {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        /* Center-align the content horizontally */
+        align-items: center;
+      }
+
+      .lines {
+        flex-grow: 0.14;
+        border-top: 1px solid #C8C8C8;
+        margin: 40 20px;
+
+      }
+
+      h2 {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <div class="text-containers">
+      <div class="lines"></div>
+      <h2>Bundle &amp; Save</h2>
+      <div class="lines"></div>
+    </div>
+  </nav>
+  <!-- create a container for box model -->
+  <main class="container">
+    <!-- In this box contain radio button.
+      using that buttton we achiev our result -->
+    <!-- Using onclick event we send a parameter like 
+        table id for table shown, box id for background change,p1 for get a price details-->
+    <div class="box 1" id="b1"
+      style="border: 1px solid rgb(0, 127, 97); background-color: rgb(244, 251, 249); width: 490px; margin: auto;">
+      <div style="display: flex">
+        <input type="radio" type="radio" name="showHide" value="show" onclick="toggleDiv('hiddenDiv', true)">
+        <div class="price" align="left" style="padding: 10px">
+          <h5 class="pair">1 Pair</h5>
+          <h4 id="p1">DKK 195.00</h4>
+          <div id="hiddenDiv" style="display: none;">
+            <!-- Content of the hidden div goes here -->
+            <div class="table" id="tt1" style="display: block;">
+              <table class="tableclone" style="empty-cells: hide">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>size</th>
+                    <th>colour</th>
+                  </tr>
+                </thead>
+                <tbody style="background-color: white">
+                  <tr>
+                    <td>#1</td>
+                    <td>
+                      <select name="size" id="size" fdprocessedid="jn7yjf">
+                        <option value="size">s</option>
+                        <option value="small">s</option>
+                        <option value="medium">m</option>
+                        <option value="large">l</option>
+                        <option value="extra-large">xl</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="color" id="color" fdprocessedid="cbvrbl">
+                        <option value="color">colour</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>#2</td>
+                    <td>
+                      <select name="size" id="size" fdprocessedid="jn7yjf">
+                        <option value="size">s</option>
+                        <option value="small">s</option>
+                        <option value="medium">m</option>
+                        <option value="large">l</option>
+                        <option value="extra-large">xl</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="color" id="color" fdprocessedid="cbvrbl">
+                        <option value="color">colour</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <script>
+          function toggleDiv(divId, show) {
+            var div = document.getElementById(divId);
+            div.style.display = show ? 'block' : 'none';
+          }
+        </script>
+        <div>
+          <h4 class="off" style="padding-left: 15rem; padding-top: 6px;">50% OFF</h4>
+        </div>
+      </div>
+    </div><br>
+    <div class="box 1" id="b1"
+      style="border: 1px solid rgb(0, 127, 97); background-color: rgb(244, 251, 249); width: 490px; margin: auto;">
+      <div style="display: flex">
+        <input type="radio" type="radio" name="showHide" value="show" onclick="toggleDiv('hiddenDivv', true)">
+        <div class="price" align="left" style="padding: 10px">
+          <h5 class="pair">2 Pair</h5>
+          <h4 id="p1">DKK 345.00</h4>
+          <div id="hiddenDivv" style="display: none;">
+            <!-- Content of the hidden div goes here -->
+            <div class="table" id="tt1" style="display: block;">
+              <table class="tableclone" style="empty-cells: hide">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>size</th>
+                    <th>colour</th>
+                  </tr>
+                </thead>
+                <tbody style="background-color: white">
+                  <tr>
+                    <td>#1</td>
+                    <td>
+                      <select name="size" id="size" fdprocessedid="jn7yjf">
+                        <option value="size">s</option>
+                        <option value="small">s</option>
+                        <option value="medium">m</option>
+                        <option value="large">l</option>
+                        <option value="extra-large">xl</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="color" id="color" fdprocessedid="cbvrbl">
+                        <option value="color">colour</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                      </select>
+                    </td>
+                <tbody style="background-color: white">
+                  <tr>
+                    <td>#2</td>
+                    <td>
+                      <select name="size" id="size" fdprocessedid="jn7yjf">
+                        <option value="size">s</option>
+                        <option value="small">s</option>
+                        <option value="medium">m</option>
+                        <option value="large">l</option>
+                        <option value="extra-large">xl</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="color" id="color" fdprocessedid="cbvrbl">
+                        <option value="color">colour</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                      </select>
+                    </td>
+
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <script>
+          function toggleDiv(divId, show) {
+            var div = document.getElementById(divId);
+            div.style.display = show ? 'block' : 'none';
+          }
+        </script>
+        <div>
+          <h4 class="check">DKK 195.00</h4>
+        </div>
+        <div>
+          <h4 class="ofdf" style="padding-left: 10rem; padding-top: 10px;">Most Popular </h4>
+          <h4 class="off" style="padding-left: 10rem; ">40% OFF</h4>
+        </div>
+      </div>
+    </div><br>
+    <div class="box 1" id="b1"
+      style="border: 1px solid rgb(0, 127, 97); background-color: rgb(244, 251, 249); width: 490px; margin: auto;">
+      <div style="display: flex">
+        <input type="radio" type="radio" name="showHide" value="show" onclick="toggleDiv('hiddenDivvv', true)">
+        <div class="price" align="left" style="padding: 10px">
+          <h5 class="pair">3 Pair</h5>
+          <h4 id="p1">DKK 528.00</h4>
+          <div id="hiddenDivvv" style="display: none;">
+            <!-- Content of the hidden div goes here -->
+            <div class="table" id="tt1" style="display: block;">
+              <table class="tableclone" style="empty-cells: hide">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>size</th>
+                    <th>colour</th>
+                  </tr>
+                </thead>
+                <tbody style="background-color: white">
+                  <tr>
+                    <td>#1</td>
+                    <td>
+                      <select name="size" id="size" fdprocessedid="jn7yjf">
+                        <option value="size">s</option>
+                        <option value="small">s</option>
+                        <option value="medium">m</option>
+                        <option value="large">l</option>
+                        <option value="extra-large">xl</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="color" id="color" fdprocessedid="cbvrbl">
+                        <option value="color">colour</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody style="background-color: white">
+                  <tr>
+                    <td>#2</td>
+                    <td>
+                      <select name="size" id="size" fdprocessedid="jn7yjf">
+                        <option value="size">s</option>
+                        <option value="small">s</option>
+                        <option value="medium">m</option>
+                        <option value="large">l</option>
+                        <option value="extra-large">xl</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="color" id="color" fdprocessedid="cbvrbl">
+                        <option value="color">colour</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody style="background-color: white">
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <script>
+          function toggleDiv(divId, show) {
+            var div = document.getElementById(divId);
+            div.style.display = show ? 'block' : 'none';
+          }
+        </script>
+        <div>
+          <h4 class="off" style="padding-left: 15rem; padding-top: 6px;">60% OFF</h4>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="boxx">
+    <p class="text">Free 2 Day Shipping</p>
+    <p class="total">Total : <b>DKK 360.00</b></p>
+  </div>
+  <div class="box" style="justify-content: center">
+    <button class="add" onclick="add()" fdprocessedid="5s9ts">+ Add to Cart</button>
+  </div>
+  <div style="font-size: 12px">
+    <p class="copy">
+      © <i>Powered by Pumper</i>
+    </p>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
